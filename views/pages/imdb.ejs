@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../common/head.ejs') %>
+
+    <body>
+        <header>
+            <%- include('../common/header.ejs') %>
+        </header>
+        <main>
+            <div class="w3-container w3-center">
+                <%= msg %>
+            </div>
+            <div class="w3-center">
+                <form method="post" autocomplete="off">
+                    <input type="text" name="movie" placeholder="Enter Movie Name Here" required>
+                    <br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+            <div id="root" class="w3-panel">
+                <h3 class="w3-serif w3-center w3-text-blue"></h3>
+                <div class="w3-panel"></div>
+            </div>
+        </main>
+        <footer>
+            <%- include('../common/footer.ejs') %>
+        </footer>
+        <script src="/imdb.js"></script>
+    </body>
+
+</html>
